@@ -1,0 +1,29 @@
+.navbar{
+    height:120px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+}
+
+.navbar-text{
+    font-family: flegrei, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size:60px;
+    z-index: 2;
+    margin-left:21px;
+    position: relative;
+    color: rgb(212, 192, 182);
+}
+
+.navbar-text:before{
+    content: attr(data-content);
+    position:absolute;
+    top:0; left:0;
+    width:400px;
+    overflow:hidden;
+    color:rgb(255, 255, 255);
+  }
